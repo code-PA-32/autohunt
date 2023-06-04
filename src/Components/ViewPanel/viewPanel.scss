@@ -1,0 +1,59 @@
+.tiny_panel_view {
+  display: grid;
+  width: 760px;
+  gap: 10px;
+  grid-auto-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr) 120px;
+  color: white;
+
+  &-search {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 2px 10px;
+  }
+
+  &-results {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+  }
+  &-select {
+    grid-column: 4/7;
+    grid-row: 2/3;
+    width: 90%;
+    display: flex;
+    align-content: center;
+  }
+  &-buttons {
+    grid-column: 7/8;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      border: 0;
+      background-color: var(--view-buttons);
+      border: 1px solid var(--view-button-text);
+      color: var(--view-button-text);
+      border-radius: 3px;
+      height: 55px;
+      width: 55px;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .active {
+      color: var(--view-buttons);
+      background-color: var(--view-button-text);
+    }
+  }
+}

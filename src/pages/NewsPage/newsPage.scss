@@ -1,0 +1,17 @@
+.news_page {
+  display: flex;
+  margin: 50px auto;
+  width: 60%;
+  position: relative;
+  gap: 20px;
+  .news_filters {
+
+    right: 0;
+  }
+  .news_list {
+    width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+}

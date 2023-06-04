@@ -1,0 +1,53 @@
+.compare_accordion {
+  padding: 50px 100px;
+}
+
+.compared_items {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  .compared_info {
+    width: 33%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.element_name {
+  opacity: 0.5;
+  margin-top: 10px;
+  background: var(--headerBG);
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+}
+.accordion_list {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.tabs_name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--textColor);
+}
+.compare_images {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  .compare_images-images {
+    background: var(--headerBG);
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    gap: 20px;
+  }
+}

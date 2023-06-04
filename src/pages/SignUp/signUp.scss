@@ -1,0 +1,17 @@
+.sign_up{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 100px;
+  
+    .login_form {
+      grid-column: 2/6;
+      grid-row: 1/3;
+      align-self: center;
+    }
+  
+    .login_page_logo {
+      grid-column: 8/12;
+      grid-row: 1/3;
+    }
+}

@@ -1,0 +1,30 @@
+.login_page_logo {
+  background-color: var(--carCardBorder);
+  color: white;
+  padding: 40px;
+  height: max-content;
+  border-radius: 4px;
+
+  &-inner {
+    border: 2px solid var(--carCardFontColor);
+    border-radius: 4px;
+    padding: 40px 60px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    p {
+      margin-top: 60px;
+      font-weight: 600;
+      font-size: 36px;
+    }
+    span {
+      font-size: 24px;
+    }
+    ul {
+      display: flex;
+      margin: 0 auto;
+      margin-top: 60px;
+      gap: 10px;
+    }
+  }
+}

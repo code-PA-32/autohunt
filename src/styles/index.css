@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import-normalize;
+
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  /* colors */
+  --main-white: white;
+  --bodyColor: #0b0c10;
+  --headerBG: #12232e;
+  --carCardFontColor: #007cc7;
+  --mainCardButton: #1b71e1;
+  --mainButton-hover: #2f8be0;
+  --carCardBorder: #12232e;
+  --carDetailsDealerBG: #071620;
+  --tableFontColorTD: #a9a9a9;
+  --textColor: #d7d7d7;
+  --searchPanelBG: #152836;
+  --listLineColor: #004a77;
+  --error: #da4d4d;
+  --error-hover: #df2929;
+  --success: #2a5c2b;
+  --view-buttons: #0b0c10;
+  --view-button-text: #4da8da;
+  /* border-radius */
+  --border-ra5: 5px;
+  --border-ra3: 3px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bodyColor);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

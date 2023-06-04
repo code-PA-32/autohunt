@@ -1,0 +1,9 @@
+.our_video {
+  padding: 0 100px;
+  video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+}

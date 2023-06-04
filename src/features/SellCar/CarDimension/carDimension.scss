@@ -1,0 +1,22 @@
+.dimension {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto, 1fr;
+  border-radius: var(--border-ra5);
+  background-color: var(--carDetailsDealerBG);
+  color: var(--textColor);
+  padding: 25px;
+  gap: 30px;
+  h3 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    width: max-content;
+    border-bottom: 2px solid #d7d7d7;
+  }
+  .car_length,
+  .car_width,
+  .car_height,
+  .car_volume {
+    background-color: var(--searchPanelBG);
+  }
+}

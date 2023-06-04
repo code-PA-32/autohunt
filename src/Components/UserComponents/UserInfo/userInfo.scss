@@ -1,0 +1,37 @@
+.users_profile {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--mainCardButton);
+  border-radius: var(--border-ra5);
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  width: 300px;
+  .edit {
+    background-color: inherit;
+    border: 0;
+    padding: 10px;
+    background-color: var(--mainCardButton);
+    border-radius: var(--border-ra3);
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--mainButton-hover);
+    }
+  }
+  .photo_upload {
+    background-color: inherit;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    border: 0;
+    transition: 0.3s ease;
+    padding: 0px;
+    &:hover {
+      color: var(--mainButton-hover);
+    }
+  }
+}

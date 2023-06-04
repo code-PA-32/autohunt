@@ -1,0 +1,37 @@
+.message_form {
+  position: absolute;
+  width: 60%;
+  margin: 50px auto;
+  background: inherit;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  color: var(--textColor);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  .image_select {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      height: 100px;
+      width: 100px;
+      display: block;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+    input {
+      display: none;
+    }
+  }
+  .text_input {
+    width: 80%;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid white;
+    height: 40px;
+    font-size: 20px;
+  }
+}

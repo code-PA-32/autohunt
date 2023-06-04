@@ -1,0 +1,81 @@
+.pictures {
+  padding: 25px;
+  background-color: var(--carDetailsDealerBG);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h3 {
+    width: max-content;
+    border-bottom: 2px solid #d7d7d7;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .image-select {
+    display: flex;
+    gap: 10px;
+
+    .image-loader {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      width: 150px;
+      border-radius: 5px;
+      background-color: black;
+      cursor: pointer;
+      border: 1px dashed white;
+      transition: border-color 0.5s ease;
+
+      &:hover {
+        border-color: red;
+      }
+    }
+
+    .image-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      &-item {
+        position: relative;
+
+        img {
+          height: 150px;
+          width: 150px;
+          object-fit: cover;
+          transition: all 0.5s ease;
+          border-radius: 5px;
+          display: block;
+        }
+
+        .delete-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 2;
+          height: 40px;
+          width: 40px;
+          border: none;
+          background-color: var(--error);
+          transition: opacity 0.5s ease;
+          opacity: 0;
+          cursor: pointer;
+          border-radius: 0px 5px 0 5px;
+        }
+
+        &:hover .delete-image {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

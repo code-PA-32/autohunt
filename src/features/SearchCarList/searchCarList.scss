@@ -1,0 +1,18 @@
+.car-list-flex {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr));
+  gap: 20px;
+  grid-template-rows: auto;
+}
+.car-list-grid {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  row-gap: 30px;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  justify-items: center;
+}

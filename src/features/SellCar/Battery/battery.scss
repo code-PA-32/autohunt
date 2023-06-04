@@ -1,0 +1,16 @@
+.car_battery {
+  display: grid;
+  gap: 40px;
+  padding: 25px;
+  border-radius: var(--border-ra5);
+  background-color: var(--carDetailsDealerBG);
+  color: var(--textColor);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto, 1fr);
+  h3 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: max-content;
+    border-bottom: 2px solid #d7d7d7;
+  }
+}

@@ -1,0 +1,41 @@
+.photo_select {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+}
+.update_user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .MuiTextField-root {
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    button {
+      background-color: inherit;
+      border: 0;
+      padding: 10px;
+      background-color: var(--mainCardButton);
+      border-radius: var(--border-ra3);
+      transition: 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--mainButton-hover);
+      }
+    }
+  }
+}

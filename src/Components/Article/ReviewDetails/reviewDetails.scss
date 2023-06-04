@@ -1,0 +1,44 @@
+.review_rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px auto;
+  width: 60%;
+  gap: 40px;
+  color: white;
+  background-color: var(--headerBG);
+  padding: 15px;
+  border-radius: 10px;
+  .star {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 20px;
+    }
+    a {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+  .rating {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap: 60px;
+    padding: 5px 0;
+    justify-content: space-between;
+    border-image: linear-gradient(
+        to left,
+        rgba(196, 196, 196, 0) 0%,
+        rgb(196, 196, 196) 50%,
+        rgba(196, 196, 196, 0) 100%
+      )
+      100% 0 100% 0/0px 0 2px 0 stretch;
+  }
+}

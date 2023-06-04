@@ -1,0 +1,38 @@
+.our_review_details {
+  color: white;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  gap: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.467);
+  flex-direction: column;
+  border-radius: 2px;
+  &-sign {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 15px;
+  }
+  &-description {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  &-cons {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 10px;
+    .cons_inner {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    span {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

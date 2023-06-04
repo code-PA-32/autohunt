@@ -1,0 +1,256 @@
+.car_result {
+  position: relative;
+  height: 220px;
+  padding: 15px;
+  min-width: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--border-ra5);
+  border: 1px solid var(--carCardBorder);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  color: var(--carCardFontColor);
+  cursor: pointer;
+  .active_link_car {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .active_link_review {
+    position: absolute;
+    display: block;
+    right: 0px;
+    bottom: 0px;
+    width: 60%;
+    height: 20%;
+    z-index: 3;
+  }
+
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(131, 131, 131, 0.19);
+  }
+  &:hover button {
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+
+  .like_car {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    top: 10px;
+    border: none;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .like_car {
+    opacity: 0;
+  }
+
+  &-image {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    button {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 50px;
+      width: 120px;
+      background-color: var(--error);
+      border-radius: var(--border-ra3);
+      border: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.8s ease-in-out;
+      z-index: 3;
+      opacity: 0;
+      cursor: pointer;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      span {
+        color: var(--main-white);
+      }
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: var(--border-ra5);
+      object-fit: cover;
+    }
+
+    .link_to_compare {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      gap: 15px;
+      z-index: -1;
+      height: 50px;
+      width: 120px;
+      border-radius: var(--border-ra3);
+      border: none;
+      top: 50%;
+      left: 50%;
+      background-color: var(--success);
+      transform: translate(-50%, -50%);
+      transition: 0.8s ease-in-out;
+
+      img {
+        max-height: 30px;
+        max-width: 30px;
+      }
+      span {
+        color: white;
+        max-width: 58px;
+      }
+      a {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .down {
+      top: 64%;
+      z-index: 1;
+      transition: 0.8s ease-in-out;
+      cursor: pointer;
+    }
+
+    .add_car {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      gap: 15px;
+      height: 50px;
+      width: 120px;
+      border-radius: var(--border-ra3);
+      border: none;
+      top: 50%;
+      left: 50%;
+      background-color: var(--success);
+      transform: translate(-50%, -50%);
+      transition: 0.8s ease-in-out;
+      z-index: 3;
+      opacity: 0;
+      cursor: pointer;
+      img {
+        max-height: 30px;
+        transition: 0.5s ease;
+        max-width: 30px;
+      }
+      span {
+        color: white;
+        max-width: 58px;
+      }
+    }
+    .delete_car {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      gap: 15px;
+      height: 50px;
+      width: 120px;
+      border-radius: var(--border-ra3);
+      border: none;
+      top: 35%;
+      transition: 0.8s ease-in-out;
+
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      left: 50%;
+      background-color: var(--error);
+      z-index: 3;
+      span {
+        max-width: 58px;
+        color: white;
+      }
+
+      img {
+        rotate: 135deg;
+        max-height: 30px;
+        transition: 0.5s ease;
+        max-width: 30px;
+      }
+    }
+  }
+
+  &-info {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 10px;
+    &-condition {
+      display: block;
+      border: 1px solid var(--carCardFontColor);
+      padding: 4px;
+      border-radius: var(--border-ra3);
+      font-weight: 600;
+    }
+    h3 {
+      margin: 0;
+      margin-top: 10px;
+      color: white;
+    }
+
+    &-price {
+      display: flex;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 7px;
+      color: var(--carCardFontColor);
+    }
+    &-location {
+      margin-top: 7px;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+    }
+    &-rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #989898;
+      width: 100%;
+      margin-top: 5px;
+      padding-top: 5px;
+    }
+
+    &-list {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-top: 5px;
+      justify-content: space-between;
+      padding-right: 20px;
+      font-weight: 400;
+      font-size: 15px;
+      li {
+        display: flex;
+        align-items: end;
+        gap: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.compare_car_page {
+  padding: 70px 100px 120px 100px;
+  display: flex;
+  &-list {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.blind_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 460px;
+  width: 360px;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+
+  a {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  opacity: 0.3;
+  transition: 0.5s ease-in-out;
+}
+.blind_card:hover {
+  opacity: 1;
+}

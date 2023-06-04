@@ -1,0 +1,29 @@
+.news_filters {
+  width: 30%;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: sticky;
+    top: 50px;
+    height: max-content;
+  }
+  .filter_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .news_tag,
+    .selected {
+      padding: 7px;
+      border: 1px solid var(--carCardFontColor);
+      border-radius: 3px;
+      background-color: transparent;
+      color: var(--textColor);
+      cursor: pointer;
+    }
+    .selected {
+      background-color: var(--carCardFontColor);
+    }
+  }
+}

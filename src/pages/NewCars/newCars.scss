@@ -1,0 +1,24 @@
+.new_cars {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  .filters {
+    grid-column: 2/4;
+    grid-row: 1/8;
+  }
+  .tiny_panel_view {
+    grid-column: 6/8;
+    grid-row: 1/2;
+  }
+  .car-list-grid,
+  .car-list-flex {
+    grid-column: 6/8;
+    grid-row: 2/10;
+  }
+  .pagination {
+    grid-column: 6/8;
+    grid-row: 10/11;
+    margin: 50px 0;
+  }
+}

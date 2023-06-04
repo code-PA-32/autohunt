@@ -1,0 +1,70 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  overflow: scroll;
+  color: var(--textColor);
+  .chat_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: 1px solid var(--carCardFontColor);
+    &:hover {
+      background: var(--carCardFontColor);
+    }
+    .new_messages {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+    }
+  }
+}
+
+.messages_list {
+  color: var(--textColor);
+  width: 60%;
+  margin: 50px auto 0;
+  height: 550px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  scroll-behavior: smooth;
+  img {
+    width: 300px;
+  }
+  .single_message {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border-radius: 3px;
+    .inner {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      gap: 9px;
+      .message_info {
+        display: flex;
+        justify-content: flex-end;
+        gap: 6px;
+        font-size: 13px;
+      }
+    }
+  }
+  .message_right {
+    align-self: flex-end;
+    background: rgb(9, 131, 125);
+  }
+  .message_left {
+    align-self: flex-start;
+    background: rgb(64, 87, 118);
+  }
+}

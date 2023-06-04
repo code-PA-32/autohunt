@@ -1,0 +1,26 @@
+.comments_box {
+  display: flex;
+  width: 60%;
+  gap: 20px;
+  color: white;
+  margin: 30px auto;
+  flex-direction: column;
+  .comments {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .comment {
+      gap: 20px;
+      display: flex;
+      .comment_text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

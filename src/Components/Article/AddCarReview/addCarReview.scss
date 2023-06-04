@@ -1,0 +1,30 @@
+.add_comment {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .rating_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .comment {
+    background-color: var(--headerBG);
+  }
+  button {
+    padding: 15px;
+    border-radius: var(--border-ra5);
+    border: none;
+    transition: 0.3s ease;
+    background-color: var(--mainCardButton);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--mainButton-hover);
+    }
+    &:disabled {
+      background-color: grey;
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.engine_details {
+  display: grid;
+  padding: 25px;
+  gap: 30px;
+  border-radius: var(--border-ra5);
+  background-color: var(--carDetailsDealerBG);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto, 1fr);
+  color: var(--textColor);
+
+  h3 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: max-content;
+    border-bottom: 2px solid #d7d7d7;
+  }
+  .car_engine {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .car_milage {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--searchPanelBG);
+  }
+  .car_transmission {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .car_drive {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .car_engCapacity {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: var(--searchPanelBG);
+  }
+  .car_power {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: var(--searchPanelBG);
+  }
+}

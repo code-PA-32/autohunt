@@ -1,0 +1,52 @@
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  user-select: none;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: 3;
+  content: "";
+  display: block;
+  border: 5px solid rgba(9, 75, 122, 0.7);
+}
+.ribbon span {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: rgba(9, 75, 122, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(207, 207, 207);
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}

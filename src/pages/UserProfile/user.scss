@@ -1,0 +1,23 @@
+.user {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr, auto);
+  .users_profile {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .links {
+    grid-column: 4/9;
+    grid-row: 1/2;
+    align-self: start;
+    justify-self: center;
+  }
+  .profile_text {
+    padding: 20px;
+    grid-column: 4/9;
+    grid-row: 2/3;
+    align-self: center;
+    text-align: center;
+  }
+}

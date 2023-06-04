@@ -1,0 +1,15 @@
+.links {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  a {
+    padding: 10px;
+    background-color: var(--mainCardButton);
+    border-radius: var(--border-ra3);
+    transition: 0.3s ease;
+    &:hover {
+      background-color: var(--mainButton-hover);
+    }
+  }
+}

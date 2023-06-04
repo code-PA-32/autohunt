@@ -1,0 +1,28 @@
+.features {
+  border-radius: var(--border-ra5);
+  background-color: var(--carDetailsDealerBG);
+  color: var(--textColor);
+  padding: 25px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    width: max-content;
+    border-bottom: 2px solid #d7d7d7;
+  }
+  .features_list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 20%;
+    }
+  }
+  .features_options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .car_price {
+      background-color: var(--searchPanelBG);
+    }
+  }
+}

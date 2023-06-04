@@ -1,0 +1,27 @@
+.news_reviews {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  button {
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    color: var(--carCardFontColor);
+    opacity: 0.5;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+    transition: all 0.7s ease;
+    cursor: pointer;
+  }
+  .new_active,
+  .rev_active {
+    opacity: 1;
+    border-bottom: 2px solid var(--carCardFontColor);
+  }
+}

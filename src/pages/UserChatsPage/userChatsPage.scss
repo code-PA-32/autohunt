@@ -1,0 +1,27 @@
+.chats {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 1fr, auto);
+
+  .links {
+    grid-column: 2/9;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: start;
+  }
+  .user_chats {
+    margin-top: 30px;
+    justify-self: center;
+    grid-column: 2/9;
+    grid-row: 2/4;
+    gap: 20px;
+  }
+  .chat {
+    margin-top: 50px;
+    justify-self: center;
+    text-align: center;
+    grid-column: 2/9;
+    grid-row: 2/3;
+  }
+}

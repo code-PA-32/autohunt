@@ -1,0 +1,24 @@
+.logos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 100px auto 50px;
+  color: white;
+  h2 {
+    margin: 0 0 10px 0;
+  }
+  .logo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .logo {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      img {
+        width: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.autohunt_add_review {
+  width: 60%;
+  color: white;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  button {
+    &:disabled {
+      cursor: not-allowed;
+    }
+    background-color: var(--carCardFontColor);
+    border: 0;
+    border-radius: var(--border-ra3);
+    padding: 15px;
+    transition: 0.3s ease;
+    &:hover {
+      background-color: var(--mainButton-hover);
+    }
+  }
+}

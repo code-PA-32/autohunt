@@ -1,0 +1,71 @@
+.credit {
+  margin-top: 50px;
+
+  h3 {
+    color: white;
+  }
+  .credit_simulation {
+    margin-top: 10px;
+    background-color: var(--carDetailsDealerBG);
+    color: white;
+    width: 100%;
+    border-radius: 3px;
+    padding: 25px;
+    display: flex;
+    &-left {
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      .car_rate,
+      .car_month,
+      .car_payment.car_price,
+      .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        width: 48%;
+      }
+    }
+
+    &-right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--carCardBorder);
+      margin-left: 25px;
+      border-radius: 3px;
+      gap: 10px;
+      border: 1px solid var(--carCardFontColor);
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        position: relative;
+      }
+      h4::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: -4px;
+        background-color: var(--listLineColor);
+        border-radius: 2px;
+      }
+      h4::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50%;
+        height: 2px;
+        bottom: -8px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: var(--listLineColor);
+        border-radius: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.comments {
+  color: var(--textColor);
+  margin-top: 20px;
+}
+.comments_box {
+  width: 100%;
+  h5 {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+  }
+}

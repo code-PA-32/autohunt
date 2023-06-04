@@ -1,0 +1,72 @@
+.full-car-info-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  margin: 100px auto 0;
+}
+
+.full_car_center {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  &-description {
+    font-size: 15px;
+    line-height: 20px;
+    height: 170px;
+    font-weight: 400;
+    color: white;
+    background: linear-gradient(
+      180deg,
+      #d7d7d7 40.07%,
+      rgba(215, 215, 215, 0.2) 100%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s ease;
+  }
+  &-description.active {
+    height: 300px;
+    color: white;
+    background: inherit;
+    background-clip: none;
+    -webkit-text-fill-color: var(--textColor);
+    overflow: scroll;
+  }
+
+  &-futures {
+    margin-top: 65px;
+    color: white;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      height: 105px;
+      transition: 0.4s ease;
+      overflow: hidden;
+      &-item {
+        padding: 10px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        background-color: var(--headerBG);
+        border-radius: var(--border-ra5);
+      }
+    }
+    &-list.active {
+      height: 205px;
+    }
+  }
+  .show-more-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--carCardFontColor);
+  }
+}

@@ -1,0 +1,30 @@
+.breadcrumb {
+  color: white;
+  padding: 30px 0 30px 110px;
+  background-color: var(--headerBG);
+  .bread_head {
+    padding-left: 20px;
+    font-size: 38px;
+    color: var(--mainButton-hover);
+  }
+  .bread {
+    padding-left: 20px;
+    ol {
+      display: flex;
+      align-items: flex-start;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+}
+.fade.breadcrumb {
+  display: none;
+}
+.compare {
+  margin-top: 55px;
+  background-color: inherit;
+}
+.details {
+  background-color: inherit;
+}

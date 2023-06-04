@@ -1,0 +1,50 @@
+.article_page {
+  margin: 50px auto;
+  color: white;
+
+  .pages_list {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+
+    .page {
+      margin: 0;
+      transition: 0.5s ease;
+      padding: 5px 0;
+      text-align: center;
+      border: 1px solid transparent;
+      cursor: pointer;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      &:hover {
+        border-bottom: 1px solid white;
+        text-decoration: underline;
+        color: var(--mainCardButton);
+
+        img {
+          display: block;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          object-fit: cover;
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+}

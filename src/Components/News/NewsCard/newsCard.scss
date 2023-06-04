@@ -1,0 +1,55 @@
+.news_card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--textColor);
+  background-color: var(--headerBG);
+  padding: 10px;
+  border-radius: var(--border-ra5);
+  border: 1px solid transparent;
+  transition: 0.4s ease;
+  &:hover {
+    border: 1px solid rgba(157, 157, 157, 0.678);
+  }
+  img {
+    border-radius: var(--border-ra3);
+  }
+  gap: 10px;
+  .time {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    padding: 5px;
+    background-color: var(--carCardFontColor);
+    border-radius: var(--border-ra3);
+  }
+  .tags {
+    display: flex;
+    gap: 10px;
+    span,
+    .selected {
+      display: block;
+      padding: 5px;
+      border: 1px solid var(--carCardFontColor);
+      border-radius: var(--border-ra3);
+    }
+    .selected {
+      background-color: var(--carCardFontColor);
+    }
+  }
+  .card_footer {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    .name {
+      font-weight: bold;
+    }
+    .comments {
+      display: flex;
+      align-items: end;
+      font-size: 18px;
+      gap: 5px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.slideshow {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 100%;
+  color: white;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 2500ms;
+}
+.main-slide-description {
+  font-size: 48px;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+.slide {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  width: 100%;
+}
+
+.slideshowDots {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+  bottom: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.slideshowDot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #003b60;
+}
+
+.slideshowDot.active {
+  background-color: #007cc7;
+}

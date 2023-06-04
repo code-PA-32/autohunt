@@ -1,0 +1,7 @@
+.review_list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}

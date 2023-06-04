@@ -1,0 +1,52 @@
+.profile_text {
+  color: var(--textColor);
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 30px auto;
+    width: max-content;
+    li {
+      text-align: left;
+      position: relative;
+      font-size: 16px;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: -10px;
+        height: 4px;
+        width: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+  }
+  .images {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: max-content;
+    gap: 10px;
+    img {
+      width: 60px;
+    }
+  }
+  .links_repo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--carCardFontColor);
+      cursor: pointer;
+    }
+  }
+}

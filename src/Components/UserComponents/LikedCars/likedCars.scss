@@ -1,0 +1,13 @@
+.message {
+  color: white;
+  justify-self: center;
+  margin-top: 50px;
+  justify-self: center;
+  text-align: center;
+  grid-column: 4/9;
+  grid-row: 2/3;
+}
+.car_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
