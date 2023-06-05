@@ -91,42 +91,42 @@ export const Header = ({
               </NavLink>
             </button>
           </li>
+          <li className="active_nav">
+            {!logged && (
+              <NavLink to="/login">
+                <LoginRoundedIcon />
+              </NavLink>
+            )}
+            {logged && (
+              <>
+                <NavLink to="/user">
+                  <Chip
+                    avatar={
+                      <Avatar
+                        sx={{ width: "24px" }}
+                        alt={userName}
+                        src={toHost(avatar)}
+                      />
+                    }
+                    label={userName}
+                    variant="outlined"
+                    sx={{ cursor: "pointer" }}
+                  />
+                </NavLink>
+                <NavLink to={"/user/messages"}>
+                  <Badge badgeContent={length} color="primary">
+                    <MailIcon color="action" />
+                  </Badge>
+                </NavLink>
+              </>
+            )}
+            {logged && (
+              <button className="logout">
+                <LogoutRoundedIcon />
+              </button>
+            )}
+          </li>
         </ul>
-        <div className="active_nav">
-          {!logged && (
-            <NavLink to="/login">
-              <LoginRoundedIcon />
-            </NavLink>
-          )}
-          {logged && (
-            <>
-              <NavLink to="/user">
-                <Chip
-                  avatar={
-                    <Avatar
-                      sx={{ width: "24px" }}
-                      alt={userName}
-                      src={toHost(avatar)}
-                    />
-                  }
-                  label={userName}
-                  variant="outlined"
-                  sx={{ cursor: "pointer" }}
-                />
-              </NavLink>
-              <NavLink to={"/user/messages"}>
-                <Badge badgeContent={length} color="primary">
-                  <MailIcon color="action" />
-                </Badge>
-              </NavLink>
-            </>
-          )}
-          {logged && (
-            <button className="logout">
-              <LogoutRoundedIcon />
-            </button>
-          )}
-        </div>
       </nav>
     </header>
   );

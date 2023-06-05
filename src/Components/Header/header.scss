@@ -1,55 +1,64 @@
 header {
-  width: 100%;
+  width: 1440px;
   height: 55px;
   background-color: var(--headerBG);
   color: var(--main-white);
-  padding: 0;
   padding: 0 100px 0 150px;
   font-size: 14px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
     .header-links {
       display: flex;
       justify-content: flex-start;
       gap: 80px;
+      position: relative;
       button {
         width: max-content;
       }
+
       .logo_btn {
         width: 120px;
+
         .logo {
           width: 100%;
         }
       }
     }
+
     ul li {
       display: flex;
       align-items: center;
+
       button {
         background-color: inherit;
         border: 0;
         cursor: pointer;
       }
+
       a {
         transition: 0.4s ease;
       }
     }
+
     .active_nav {
       display: flex;
       align-items: center;
       gap: 10px;
+      
       a {
         display: flex;
         align-items: center;
         gap: 10px;
       }
+
       .logout {
         border: none;
         background-color: inherit;
@@ -58,8 +67,10 @@ header {
     }
   }
 }
+
 .fade {
   position: absolute;
+  width: 100%;
   top: 0;
   z-index: 2;
   background-color: inherit;

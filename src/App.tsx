@@ -26,7 +26,6 @@ import { HeaderContainer } from "features/Header";
 import { Scroll } from "features/Scroll";
 import { Arrow } from "features/Arrow";
 import { UserChatsPage } from "pages/UserChatsPage/UserChatsPage";
-import { TEXT } from "pages/TEXT";
 import { CarReviewDetailsPage } from "pages/CarReviewDetailsPage/CarReviewDetailsPage";
 import Footer from "Components/Footer/Footer";
 
@@ -53,7 +52,6 @@ const App = () => {
           <Route path="/user/cars" element={<UserCarsPage />} />
           <Route path="/user/messages" element={<UserChatsPage />} />
           <Route path="/user/messages/:id" element={<MessagesPage />} />
-          <Route path="/test" element={<TEXT />} />
           <Route path="/article" element={<ArticlePage />} />
           <Route path="/article/reviews" element={<CarReviewsPage />} />
           <Route

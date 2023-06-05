@@ -41,13 +41,13 @@
   .card_footer {
     display: flex;
     gap: 10px;
-    align-items: end;
+    align-items: flex-end;
     .name {
       font-weight: bold;
     }
     .comments {
       display: flex;
-      align-items: end;
+      align-items: flex-end;
       font-size: 18px;
       gap: 5px;
     }

@@ -1,5 +1,11 @@
 .message {
   color: white;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 400px;
+  a {
+    color: var(--view-button-text);
+  }
 }
 .car_list {
   display: grid;

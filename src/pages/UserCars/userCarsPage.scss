@@ -1,5 +1,5 @@
 .user_cars {
-  margin-top: 50px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(3, 1fr, auto);

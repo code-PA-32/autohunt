@@ -9,6 +9,9 @@ interface ChatProps {
 }
 
 export const Chat = ({ chats }: ChatProps) => {
+  if (chats.length === 0) {
+    return <div className="no_chats">You have no chats yet.</div>;
+  }
   return (
     <div className="chat">
       {chats.map((c) => (

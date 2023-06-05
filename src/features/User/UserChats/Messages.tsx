@@ -5,7 +5,6 @@ import { ChatMessageForm } from "Components/UserComponents/ChatMessageForm";
 export const MessagesBox = () => {
   const {
     messages,
-    status,
     imageData,
     userId,
     onSetImage,

@@ -29,31 +29,32 @@ export const CompareCarsAccordion = ({
   currentImage,
 }: CompareCarsAccordionProps) => {
   const keyObj: string[] = [];
-  for (const key in cars[0].details) {
+  for (const key in cars[0]?.details) {
     if (key === "id") continue;
     keyObj.push(key);
   }
 
   return (
     <div className="compare_accordion">
-      {keyObj.map((item, i) => {
-        return (
-          <Accordion key={i} sx={{ background: "#071620" }}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-            >
-              <Typography className="accordion_list">
-                <span className="tabs_name">{item}</span>
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails className="list_items">
-              <ListOfCompareData data={item} compare={cars} />
-            </AccordionDetails>
-          </Accordion>
-        );
-      })}
+      {cars &&
+        keyObj.map((item, i) => {
+          return (
+            <Accordion key={i} sx={{ background: "#071620" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography className="accordion_list">
+                  <span className="tabs_name">{item}</span>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails className="list_items">
+                <ListOfCompareData data={item} compare={cars} />
+              </AccordionDetails>
+            </Accordion>
+          );
+        })}
       <CompareImages
         cars={cars}
         viewerImg={viewerImg}

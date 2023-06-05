@@ -25,18 +25,6 @@ export const ProfileLink = ({ isAdmin }: ProfileLinksProps) => {
           {l.name}
         </NavLink>
       ))}
-      {isAdmin && (
-        <NavLink
-          to="/user/user-list"
-          style={({ isActive }) =>
-            isActive
-              ? { background: "transparent", border: "1px solid #1b71e1" }
-              : {}
-          }
-        >
-          Users
-        </NavLink>
-      )}
     </div>
   );
 };
