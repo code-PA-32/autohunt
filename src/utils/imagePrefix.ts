@@ -10,7 +10,7 @@ export function toHost(imagesOrImage: string | string[]): string | string[] {
 
 function addPrefix(image: string): string {
   if (!image.startsWith("http")) {
-    return "http://localhost:3030/" + image;
+    return "http://176.114.4.6:3030/" + image;
   }
   return image;
 }
