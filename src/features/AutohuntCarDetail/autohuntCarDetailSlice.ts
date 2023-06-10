@@ -84,7 +84,6 @@ const autohuntCarDetailSlice = createSlice({
       .addCase(
         getAutohuntCarDetails.fulfilled,
         (state, action: PayloadAction<{ data: AutohuntCarDetail }>) => {
-          console.log(action.payload);
           state.car = action.payload.data;
           state.status = "idle";
         }

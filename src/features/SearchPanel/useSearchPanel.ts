@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+
 import { carFiltersSelector } from "features/MainPageFilters/carFiltersSelector";
 import {
   setBody,
@@ -14,9 +18,6 @@ import {
   setCondition,
 } from "features/MainPageFilters/carFiltersSlice";
 import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
-import { useState } from "react";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
 import { useAppDispatch } from "store";
 
 export const useSearchPanel = () => {
@@ -38,7 +39,6 @@ export const useSearchPanel = () => {
     transmission,
     bodyType,
   } = filters;
-
 
   const brands = Object.keys(filterData.brands) || [];
   const models = (brand && Object.values(filterData.brands[brand])) || [];

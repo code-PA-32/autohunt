@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
+
 import { useAppDispatch } from "store";
 import { mainPageAutohuntReviewSelector } from "./mainPageAutohuntReviewSelector";
-import { useEffect } from "react";
 import { getAutohuntReviewsCar } from "./mainPageAutohuntReviewSlice";
 
 export const useMainPageAutohuntReview = () => {

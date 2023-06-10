@@ -1,9 +1,11 @@
-import { CarRating } from "Components/CarComponents/CarRating";
-import StarIcon from "@mui/icons-material/Star";
-import { AvrCarRating } from "types";
 import { Link } from "react-router-dom";
+import StarIcon from "@mui/icons-material/Star";
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import { CarRating } from "Components/CarComponents/CarRating";
+import { AvrCarRating } from "types";
+
 import "./reviewDetails.scss";
+
 interface ReviewDetailsProps {
   avrRating: AvrCarRating;
   to?: boolean;

@@ -1,6 +1,7 @@
 import { Container } from "Components/Container";
-import "./newsPage.scss";
 import { News } from "features/News";
+
+import "./newsPage.scss";
 
 export const NewsPage = () => {
   return (

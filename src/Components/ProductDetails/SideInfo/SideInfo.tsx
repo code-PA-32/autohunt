@@ -1,10 +1,13 @@
-import { SideInfoProps } from "interfaces/sideInfo";
-import "./sideInfo.scss";
-import { CarRating } from "Components/CarComponents/CarRating";
 import { Link } from "react-router-dom";
-import CompareArrowsRoundedIcon from "@mui/icons-material/CompareArrowsRounded";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
+import CompareArrowsRoundedIcon from "@mui/icons-material/CompareArrowsRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
+
+import { SideInfoProps } from "interfaces/sideInfo";
+import { CarRating } from "Components/CarComponents/CarRating";
+
+import "./sideInfo.scss";
+
 export const SideInfo = ({
   battery,
   dimension,

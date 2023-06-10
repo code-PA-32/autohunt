@@ -1,6 +1,7 @@
 import { Container } from "Components/Container";
-import "./userLikedCars.scss";
 import { UserLikedCars } from "features/User";
+
+import "./userLikedCars.scss";
 
 export const UserLikedCarsPage = () => {
   return (

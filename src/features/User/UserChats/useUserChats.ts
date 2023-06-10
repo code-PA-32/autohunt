@@ -1,6 +1,7 @@
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import { useAppDispatch } from "store";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
+import { useAppDispatch } from "store";
 import { currentUserSelector } from "../Login/loginUserSelectors";
 import { userChatSelector } from "./userChatsSelector";
 import { getMessagesInfo, unreadMessagesLength } from "./userChatsSlice";
@@ -11,7 +12,6 @@ export const useUserChats = () => {
   const { user, logged } = useSelector(currentUserSelector);
   const { status, chats } = useSelector(userChatSelector);
 
-  console.log(chats);
   const handleSetText = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
   };
@@ -21,7 +21,7 @@ export const useUserChats = () => {
       dispatch(getMessagesInfo(user.userId));
       dispatch(unreadMessagesLength(user.userId));
     }
-  }, []);
+  }, [dispatch, logged]);
 
   return {
     user,

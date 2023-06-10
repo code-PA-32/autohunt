@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+
 import { sellCarSelector } from "./sellCarSelector";
 import { useAppDispatch } from "store";
 import { currentUserSelector } from "features/User/Login/loginUserSelectors";
@@ -20,7 +21,6 @@ export const useSellCar = () => {
     console.log(carToSell);
     dispatch(postCar(carToSell));
   };
-  console.log(car);
   return {
     car,
     onCarSell,

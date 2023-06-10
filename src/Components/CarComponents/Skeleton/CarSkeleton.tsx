@@ -1,6 +1,8 @@
 import Skeleton from "@mui/material/Skeleton";
 import { Fragment } from "react";
+
 import "./carSkeleton.scss";
+
 interface CarSkeletonProps {
   length: number;
   className: string;

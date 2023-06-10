@@ -1,6 +1,7 @@
 import { MainPageNews } from "features/MainPageNews";
 import { useNewsReviewsSection } from "./useNewsReviewsSection";
 import { MainPageAutohuntReview } from "features/MainPageAutohuntReview";
+
 import "./newsReviewsSection.scss";
 
 export const NewsReviewsSection = () => {

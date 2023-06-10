@@ -4,10 +4,11 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { CardCars } from "types";
-
-import "./compareCarsAccordion.scss";
 import { ListOfCompareData } from "./ListOfCompareData";
 import { CompareImages } from "./CompareImages";
+
+
+import "./compareCarsAccordion.scss";
 
 interface CompareCarsAccordionProps {
   cars: CardCars[];

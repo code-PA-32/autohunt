@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
-import { searchCarListSelectors } from "./searchCarListSelectors";
-import { useAppDispatch } from "store";
 import { useEffect } from "react";
+import { searchCarListSelectors } from "./searchCarListSelectors";
+
+import { useAppDispatch } from "store";
 import { getCarList } from "./searchCarListSlice";
 import { carFiltersSelector } from "features/MainPageFilters/carFiltersSelector";
 import { compareCarsSelector } from "features/CompareCars/compareCarsSelector";

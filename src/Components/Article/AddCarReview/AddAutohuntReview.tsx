@@ -1,6 +1,7 @@
-import { TextInput } from "Components/SellCar";
-import "./addAutohuntReview.scss";
 import { ChangeEvent } from "react";
+import { TextInput } from "Components/SellCar";
+
+import "./addAutohuntReview.scss";
 
 interface AddAutohuntReviewProps {
   text: string;

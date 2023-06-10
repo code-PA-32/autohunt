@@ -1,10 +1,12 @@
-import "./article.scss";
 import { Link } from "react-router-dom";
+
 import bg from "assets/1.png";
 import bg2 from "assets/2.png";
 import bg3 from "assets/3.png";
 import bg4 from "assets/4.jpg";
 import bg6 from "assets/6.jpeg";
+
+import "./article.scss";
 
 export const Article = () => {
   const pages = [
@@ -19,7 +21,7 @@ export const Article = () => {
     <main className="article_page">
       <ul className="pages_list">
         {pages.map((page) => (
-          <li key={page.to} className="page">
+          <li key={page.name} className="page">
             <Link to={page.to}>
               {page.name}
               <img src={page.img} alt={page.name} />

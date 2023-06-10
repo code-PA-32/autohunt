@@ -1,8 +1,10 @@
-import { NewsMainCard } from "types";
-import "./mainPageNewsCard.scss";
 import { Link } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import { NewsMainCard } from "types";
+
+import "./mainPageNewsCard.scss";
+
 interface MainPageNewsCardProps {
   news: NewsMainCard[];
 }

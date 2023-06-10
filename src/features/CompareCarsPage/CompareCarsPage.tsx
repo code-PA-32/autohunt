@@ -1,8 +1,9 @@
-import "./compareCars.scss";
 import { BlindCard } from "Components/CarComponents/BlindCard";
 import { useCompareCars } from "./useCompareCarsPage";
 import { GridCarCard } from "Components/CarComponents/GridCarCard";
 import { CompareCarsAccordion } from "Components/CarComponents/CompareCarsAccordion";
+
+import "./compareCars.scss";
 
 export const CompareCarsPage = () => {
   const {

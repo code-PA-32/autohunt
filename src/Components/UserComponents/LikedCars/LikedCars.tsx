@@ -1,7 +1,10 @@
-import { CardCars } from "types";
-import "./likedCars.scss";
 import { Link } from "react-router-dom";
+
 import { GridCardMain } from "Components/CarComponents/GridCardMain";
+import { CardCars } from "types";
+
+import "./likedCars.scss";
+
 interface LikedCarsProps {
   cars: Array<CardCars>;
   isLiked: (id: string) => boolean;

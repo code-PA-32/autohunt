@@ -1,7 +1,9 @@
-import "./googleMap.scss";
+import { useRef, useEffect } from "react";
+
 import { Location } from "types";
 import { styles } from "utils";
-import { useRef, useEffect } from "react";
+
+import "./googleMap.scss";
 
 interface GoogleMapProps extends Location {
   googleMaps: any;

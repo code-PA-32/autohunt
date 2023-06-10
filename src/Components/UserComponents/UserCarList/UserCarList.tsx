@@ -1,7 +1,9 @@
-import "./userCarList.scss";
-import { CardCars } from "types";
-import { Link } from "react-router-dom";
 import { GridCardMain } from "Components/CarComponents/GridCardMain";
+import { Link } from "react-router-dom";
+import { CardCars } from "types";
+
+import "./userCarList.scss";
+
 interface UserCarsProps {
   cars: Array<CardCars>;
   onEditCar: (car: string) => void;

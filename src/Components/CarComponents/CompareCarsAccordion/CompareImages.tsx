@@ -1,5 +1,3 @@
-import { CardCars } from "types";
-import "./compareCarsAccordion.scss";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageViewer from "react-simple-image-viewer";
 import {
@@ -8,7 +6,11 @@ import {
   AccordionSummary,
   Typography,
 } from "@mui/material";
+
+import { CardCars } from "types";
 import { toHost } from "utils";
+import "./compareCarsAccordion.scss";
+
 interface CompareCarsImages {
   cars: CardCars[];
   viewerImg: boolean;

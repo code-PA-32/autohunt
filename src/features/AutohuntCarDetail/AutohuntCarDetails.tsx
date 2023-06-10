@@ -9,7 +9,6 @@ import { AddAutohuntReview } from "Components/Article/AddCarReview";
 export const AutohuntCarDetail = () => {
   const {
     car,
-    status,
     logged,
     userId,
     text,

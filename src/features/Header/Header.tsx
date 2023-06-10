@@ -9,11 +9,14 @@ export const HeaderContainer = () => {
     handleSetUsedCars,
     logged,
     userName,
-    avatar,length
+    avatar,
+    length,
+    onUserLogout,
   } = useHeader();
   return (
     <Header
       className={clazz}
+      onLogout={onUserLogout}
       onFilterReset={handleResetFilters}
       onSetNewCars={handleSetNewCars}
       onSetUsedCars={handleSetUsedCars}

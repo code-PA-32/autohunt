@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
+
 import "./profileLinks.scss";
+
 interface ProfileLinksProps {
   isAdmin: boolean;
 }
+
 export const ProfileLink = ({ isAdmin }: ProfileLinksProps) => {
   const links = [
     { to: "/user/cars", id: "/user/cars", name: "Cars" },

@@ -1,9 +1,10 @@
-import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
+import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
 import { useAppDispatch } from "store";
 import { sellCarSelector } from "../sellCarSelector";
 import { setBatteryCap, setChargeTime, setChargeType } from "../sellCarSlice";
-import { useEffect, useState } from "react";
 
 export const useBattery = () => {
   const dispatch = useAppDispatch();

@@ -1,10 +1,11 @@
 import { Fragment } from "react";
-import "./productSlider.scss";
 import { ProductSliderProps } from "interfaces";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 import { toHost } from "utils";
+
+import "./productSlider.scss";
 
 export const ProductSlider = ({
   images,

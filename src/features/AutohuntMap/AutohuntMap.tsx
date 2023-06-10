@@ -1,6 +1,7 @@
-import "./autohuntMap.scss";
-import { styles } from "utils";
 import { useRef, useEffect } from "react";
+import { styles } from "utils";
+
+import "./autohuntMap.scss";
 
 export const AutohuntMap = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);

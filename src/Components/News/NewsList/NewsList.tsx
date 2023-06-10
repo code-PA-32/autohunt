@@ -1,6 +1,7 @@
 import { NewsPageCard } from "types";
-import "./newsList.scss";
 import { NewsCard } from "../NewsCard";
+
+import "./newsList.scss";
 
 interface NewsListProps {
   news: NewsPageCard[];

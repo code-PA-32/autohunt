@@ -1,3 +1,6 @@
+import { useSelector } from "react-redux";
+import { ChangeEvent, SyntheticEvent } from "react";
+
 import { useAppDispatch } from "store";
 import {
   setModel,
@@ -10,10 +13,8 @@ import {
   setBody,
   setYear,
 } from "../sellCarSlice";
-import { useSelector } from "react-redux";
 import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
 import { sellCarSelector } from "../sellCarSelector";
-import { ChangeEvent, SyntheticEvent } from "react";
 
 export const useCarDetails = () => {
   const dispatch = useAppDispatch();

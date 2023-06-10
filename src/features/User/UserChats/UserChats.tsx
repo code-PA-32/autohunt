@@ -1,10 +1,10 @@
-import { ProfileLink, UserInfo } from "Components/UserComponents";
+import { ProfileLink } from "Components/UserComponents";
 import { useUserChats } from "./useUserChats";
 
 import "./userChats.scss";
 import { Chat } from "Components/UserComponents/Chat";
 export const UserChats = () => {
-  const { user, chats, status, text, handleSetText } = useUserChats();
+  const { user, chats } = useUserChats();
 
   return (
     <>

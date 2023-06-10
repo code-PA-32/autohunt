@@ -1,7 +1,3 @@
-import "./searchPanel.scss";
-import { AutoCompleteSelect } from "Components/Filters";
-import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
-import { useSearchPanel } from "./useSearchPanel";
 import {
   FormControlLabel,
   FormLabel,
@@ -9,6 +5,11 @@ import {
   RadioGroup,
   Slider,
 } from "@mui/material";
+import { AutoCompleteSelect } from "Components/Filters";
+import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
+import { useSearchPanel } from "./useSearchPanel";
+
+import "./searchPanel.scss";
 
 export const SearchPanel = () => {
   const {

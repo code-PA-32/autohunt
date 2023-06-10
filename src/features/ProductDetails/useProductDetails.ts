@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+
 import { useAppDispatch } from "store";
 import { productDetailsSelector } from "./productDetailsSelector";
-import { getOneProduct } from "./productDetailsSlice";
+import { getOneProduct, updateCarViews } from "./productDetailsSlice";
 import { useCompareCars } from "features/CompareCarsPage/useCompareCarsPage";
 import { useSearchCarList } from "features/SearchCarList/useSearchCarList";
 
@@ -45,11 +46,13 @@ export const useProductDetail = () => {
   };
 
   useEffect(() => {
-    if (id) dispatch(getOneProduct(id));
-    else {
+    if (id) {
+      dispatch(getOneProduct(id));
+      dispatch(updateCarViews(id));
+    } else {
       return;
     }
-  }, []);
+  }, [id, dispatch]);
 
   let flag;
   if (id) flag = isInCompare(id);

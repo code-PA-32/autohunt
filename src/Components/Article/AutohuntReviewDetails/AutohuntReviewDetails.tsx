@@ -3,6 +3,7 @@ import ClearIcon from "@mui/icons-material/Clear";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { red } from "@mui/material/colors";
 import { AutohuntCarDetail } from "types";
+
 import "./autohuntReviewDetails.scss";
 
 interface AutohuntReviewDetailsProps

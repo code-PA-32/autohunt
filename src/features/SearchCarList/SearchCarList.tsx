@@ -1,11 +1,13 @@
-import "./searchCarList.scss";
+import Snackbar from "@mui/material/Snackbar";
+import { Alert } from "@mui/material";
+
 import { useSearchCarList } from "./useSearchCarList";
 import { GridCarCard } from "Components/CarComponents/GridCarCard";
 import { FlexCarCard } from "Components/CarComponents/FlexCarCard";
 import { useProfile } from "features/User/UserProfile/useProfile";
 import { CarSkeleton } from "Components/CarComponents/Skeleton";
-import Snackbar from "@mui/material/Snackbar";
-import { Alert } from "@mui/material";
+
+import "./searchCarList.scss";
 
 export const SearchCarList = () => {
   const { carList, isInCompare, handleAddCompare, view, status, message } =

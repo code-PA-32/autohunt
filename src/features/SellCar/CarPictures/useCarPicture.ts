@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
 import { useAppDispatch } from "store";
 import { setSellImages } from "../sellCarSlice";
-import { useEffect } from "react";
 import { sellCarSelector } from "../sellCarSelector";
 
 export const useCarPicture = () => {
@@ -33,7 +34,6 @@ export const useCarPicture = () => {
   useEffect(() => {
     dispatch(setSellImages(src));
   }, [src, dispatch]);
-  console.log(src);
 
   return {
     images: src,

@@ -1,6 +1,7 @@
-import { TextInput } from "Components/SellCar";
-import "./addNewsComment.scss";
 import { ChangeEvent } from "react";
+import { TextInput } from "Components/SellCar";
+
+import "./addNewsComment.scss";
 
 interface AddNewsCommentProps {
   text: string;

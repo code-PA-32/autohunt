@@ -1,6 +1,8 @@
 import { ChangeEvent, FormEvent } from "react";
-import "./newsFilters.scss";
 import { TextInput } from "Components/SellCar";
+
+import "./newsFilters.scss";
+
 interface NewsFiltersProps {
   tags: string[];
   term: string;

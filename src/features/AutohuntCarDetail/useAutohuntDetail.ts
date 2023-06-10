@@ -15,15 +15,14 @@ export const useAutohuntCarDetail = () => {
   const { id } = useParams();
   const dispatch = useAppDispatch();
   const [text, setText] = useState("");
-  const { car, status } = useSelector(autohuntCarDetailsSelector);
+  const { car } = useSelector(autohuntCarDetailsSelector);
   const {
     user: { userId, name, photo },
     logged,
   } = useSelector(currentUserSelector);
-  console.log(car);
   useEffect(() => {
     if (id) dispatch(getAutohuntCarDetails(id));
-  }, []);
+  }, [dispatch, id]);
 
   const setCommentText = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
@@ -49,7 +48,6 @@ export const useAutohuntCarDetail = () => {
 
   return {
     car,
-    status,
     logged,
     text,
     setCommentText,

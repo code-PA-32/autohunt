@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
-import { currentUserSelector } from "../Login/loginUserSelectors";
-import { ChangeEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ChangeEvent, useEffect, useState } from "react";
+
+import { currentUserSelector } from "../Login/loginUserSelectors";
 import { useAppDispatch } from "store";
 import { getUserLikedCars } from "../UserCars/userCarsSlice";
 import { userCarsSelector } from "../UserCars/userCarsSelector";
@@ -31,9 +32,9 @@ export const useProfile = () => {
 
   useEffect(() => {
     if (!logged) {
-      //   navigate("/");
+      navigate("/");
     }
-  }, [logged]);
+  }, [logged, navigate]);
 
   useEffect(() => {
     if (logged && user.likedCars?.length !== 0) {

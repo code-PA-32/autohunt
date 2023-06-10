@@ -1,5 +1,7 @@
 import { AutohuntCarDetail } from "types";
+
 import "./autohuntReviewVideo.scss";
+
 interface AutohuntReviewVideoProps
   extends Pick<AutohuntCarDetail, "video" | "img"> {}
 

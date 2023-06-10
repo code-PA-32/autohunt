@@ -1,11 +1,11 @@
-import { useRecommendedCars } from "./use-recommendedCars";
 import { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 
+import { useRecommendedCars } from "./use-recommendedCars";
 import { GridCardMain } from "Components/CarComponents/GridCardMain";
-import { CardCars } from "types";
 import { CarSkeleton } from "Components/CarComponents/Skeleton";
+import { CardCars } from "types";
 
 export const RecommendedCars = () => {
   const [newCars, setNewCars] = useState(true);

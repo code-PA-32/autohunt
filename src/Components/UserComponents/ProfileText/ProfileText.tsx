@@ -1,10 +1,11 @@
-import "./profileText.scss";
 import mongo from "assets/mongo.png";
 import node from "assets/ndoe.png";
 import react from "assets/react.png";
 import redux from "assets/redux.png";
 import ts from "assets/ts.png";
 import LaunchIcon from "@mui/icons-material/Launch";
+
+import "./profileText.scss";
 
 export const ProfileText = () => {
   return (

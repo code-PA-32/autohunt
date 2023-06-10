@@ -1,19 +1,22 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import "./header.scss";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
-import logo from "assets/logo.png";
 import LoginRoundedIcon from "@mui/icons-material/LoginRounded";
 import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
 import Badge from "@mui/material/Badge";
 import MailIcon from "@mui/icons-material/Mail";
+
+import logo from "assets/logo.png";
 import { toHost } from "utils";
+
+import "./header.scss";
+
 interface HeaderProps {
   className: string;
   onFilterReset: () => void;
   onSetNewCars: () => void;
   onSetUsedCars: () => void;
+  onLogout: () => void;
   logged: boolean;
   userName: string;
   avatar: string;
@@ -25,6 +28,7 @@ export const Header = ({
   onSetUsedCars,
   onSetNewCars,
   onFilterReset,
+  onLogout,
   logged,
   userName,
   avatar,
@@ -121,7 +125,7 @@ export const Header = ({
               </>
             )}
             {logged && (
-              <button className="logout">
+              <button className="logout" onClick={onLogout}>
                 <LogoutRoundedIcon />
               </button>
             )}

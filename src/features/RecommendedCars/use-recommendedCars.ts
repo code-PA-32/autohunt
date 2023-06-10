@@ -7,7 +7,7 @@ import {
 } from "./recommendedCarsSlice";
 import { recommendedCars } from "./recommendedCarsSelector";
 import { useAppDispatch } from "store";
-import { Cars, Status,CardCars } from "types";
+import { Status, CardCars } from "types";
 
 export const useRecommendedCars = (): {
   status: Status;

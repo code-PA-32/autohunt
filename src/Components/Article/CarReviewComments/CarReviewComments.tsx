@@ -1,8 +1,10 @@
-import { Rating } from "types";
-import "./carReviewComments.scss";
 import { Avatar } from "@mui/material";
 import { CarRating } from "Components/CarComponents/CarRating";
+import { Rating } from "types";
 import { toHost } from "utils";
+
+import "./carReviewComments.scss";
+
 interface CarReviewCommentsProps {
   rating: Rating[];
   deleteComment: (id: string) => void;
@@ -28,7 +30,10 @@ export const CarReviewComments = ({
             <CarRating rating={r.stared} size={"small"} />
           </div>
           {r.userId === user && (
-            <button onClick={() => deleteComment(r.id as string)}>
+            <button
+              className="delete_comment"
+              onClick={() => deleteComment(r.id as string)}
+            >
               DELETE
             </button>
           )}

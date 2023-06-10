@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { ONE_PRODUCT } from "config";
+import { ONE_PRODUCT, UPDATE_VIEWS } from "config";
 import { Cars, Status } from "types";
 
 export const getOneProduct = createAsyncThunk<
@@ -23,6 +23,13 @@ export const getOneProduct = createAsyncThunk<
         return false;
       }
     },
+  }
+);
+
+export const updateCarViews = createAsyncThunk<null, string>(
+  "car/updateViews",
+  async (id: string) => {
+    return await axios.patch(UPDATE_VIEWS(id));
   }
 );
 

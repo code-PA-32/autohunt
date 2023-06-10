@@ -1,5 +1,6 @@
-import "./switch.scss";
 import { Link } from "react-router-dom";
+
+import "./switch.scss";
 
 interface SwitchProps {
   text: string;

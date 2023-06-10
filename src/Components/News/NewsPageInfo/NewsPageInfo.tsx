@@ -1,5 +1,7 @@
 import { ImageWithSpinner } from "features/ImageWithSpinner";
+
 import "./newsPageInfo.scss";
+
 interface NewsPageInfoProps {
   image: string;
   image2: string;

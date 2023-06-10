@@ -1,19 +1,18 @@
 import { carFiltersSelector } from "features/MainPageFilters/carFiltersSelector";
+import { SelectChangeEvent } from "@mui/material";
+import { useSelector } from "react-redux";
 
 import { searchCarListSelectors } from "features/SearchCarList/searchCarListSelectors";
-
-import { useSelector } from "react-redux";
 import { useAppDispatch } from "store";
 import {
   setSort,
   setView,
   setTerm,
 } from "features/MainPageFilters/carFiltersSlice";
-import { SelectChangeEvent } from "@mui/material";
 
 export const useViewPanel = () => {
   const dispatch = useAppDispatch();
-  const { sort, view,term } = useSelector(carFiltersSelector).filters;
+  const { sort, view, term } = useSelector(carFiltersSelector).filters;
   const { total } = useSelector(searchCarListSelectors);
 
   const handleChangeTerm = (e: React.ChangeEvent<HTMLInputElement>) => {

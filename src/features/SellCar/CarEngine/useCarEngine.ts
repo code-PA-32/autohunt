@@ -1,5 +1,6 @@
-import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
 import { useSelector } from "react-redux";
+
+import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
 import { useAppDispatch } from "store";
 import { sellCarSelector } from "../sellCarSelector";
 import {

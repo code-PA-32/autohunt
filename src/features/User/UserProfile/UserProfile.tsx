@@ -1,14 +1,15 @@
+import * as Yup from "yup";
+import { Form, Field, Formik, ErrorMessage } from "formik";
+import { TextField } from "@mui/material";
+import AddPhotoAlternateRoundedIcon from "@mui/icons-material/AddPhotoAlternateRounded";
+import PhotoCameraRoundedIcon from "@mui/icons-material/PhotoCameraRounded";
+
 import { ProfileText } from "Components/UserComponents";
 import { ProfileLink } from "Components/UserComponents/ProfileLinks/ProfileLinks";
-import PhotoCameraRoundedIcon from "@mui/icons-material/PhotoCameraRounded";
-import AddPhotoAlternateRoundedIcon from "@mui/icons-material/AddPhotoAlternateRounded";
 import { useProfile } from "./useProfile";
 import { Avatar } from "@mui/material";
 import "./userProfile.scss";
-import * as Yup from "yup";
 import { toHost } from "utils";
-import { Form, Field, Formik, ErrorMessage } from "formik";
-import { TextField } from "@mui/material";
 
 export const UserProfile = () => {
   const {
@@ -20,7 +21,7 @@ export const UserProfile = () => {
     editUser,
     onEditUser,
   } = useProfile();
-  console.log(user);
+
   return (
     <>
       <div className="users_profile">

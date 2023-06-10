@@ -1,12 +1,13 @@
 import Link, { LinkProps } from "@mui/material/Link";
+import { Link as RouterLink } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 
-import { Link as RouterLink } from "react-router-dom";
-import "./breadCrumbs.scss";
 import { useBreadCrumbs } from "./useBreadCrumbs";
+
+import "./breadCrumbs.scss";
 
 interface LinkRouterProps extends LinkProps {
   to: string;

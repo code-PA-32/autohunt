@@ -1,8 +1,9 @@
-import { Dealer } from "types";
 import { Link } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import InsertCommentRoundedIcon from "@mui/icons-material/InsertCommentRounded";
+import { Dealer } from "types";
 import { ImageWithSpinner } from "features/ImageWithSpinner";
+
 import "./newsCard.scss";
 
 interface NewsCardProps {

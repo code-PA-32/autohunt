@@ -1,8 +1,10 @@
 import { Checkbox, FormControlLabel } from "@mui/material";
+
 import { useCarFeatures } from "./useCarFeatures";
 import { SellCarFeatures } from "types";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
 import { TextInput } from "Components/SellCar";
+
 import "./carFeatures.scss";
 
 export const CarFeatures = () => {

@@ -18,7 +18,7 @@ export const useCompare = (): {
       dispatch(getCompareCars());
     }
     return;
-  }, []);
+  }, [dispatch]);
 
   return {
     list,

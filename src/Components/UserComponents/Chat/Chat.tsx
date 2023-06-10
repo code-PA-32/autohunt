@@ -1,9 +1,12 @@
-import "./chat.scss";
 import { Avatar, Badge } from "@mui/material";
-import { Chat as ChatInterface } from "types/chat";
-import { Link } from "react-router-dom";
-import { toHost } from "utils";
 import MailIcon from "@mui/icons-material/Mail";
+import { Link } from "react-router-dom";
+
+import { Chat as ChatInterface } from "types/chat";
+import { toHost } from "utils";
+
+import "./chat.scss";
+
 interface ChatProps {
   chats: ChatInterface[];
 }

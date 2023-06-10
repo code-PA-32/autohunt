@@ -13,6 +13,16 @@
     .comment {
       gap: 20px;
       display: flex;
+      position: relative;
+      .delete_comment {
+        position: absolute;
+        right: 0;
+        background: var(--error);
+        border: 0;
+        border-radius: var(--border-ra3);
+        padding: 5px;
+        cursor: pointer;
+      }
       .comment_text {
         display: flex;
         flex-direction: column;

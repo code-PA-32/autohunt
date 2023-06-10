@@ -1,6 +1,7 @@
 import { Container } from "Components/Container";
-import "./user.scss";
 import { UserProfile } from "features/User";
+
+import "./user.scss";
 
 export const UserPage = () => {
   return (

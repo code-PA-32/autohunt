@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+
 import { useAppDispatch } from "store";
 import { newsPageSelector } from "./newsSelector";
 import { ChangeEvent, FormEvent, useEffect } from "react";
@@ -10,12 +11,12 @@ export const useNews = () => {
   const dispatch = useAppDispatch();
   const { news, status } = useSelector(newsPageSelector);
   const { filters, term, tags } = useSelector(newsFilterSelector);
+
   useEffect(() => {
     dispatch(getAllNews({ tags: filters, term }));
     dispatch(getNewsTags());
   }, [dispatch, filters]);
 
-  console.log(filters);
 
   const toggleTags = (tag: string) => {
     dispatch(toggleTag(tag));

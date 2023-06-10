@@ -1,7 +1,9 @@
 import { useMainPageAutohuntReview } from "./useMainPageAuthontReview";
 import { GridCardMain } from "Components/CarComponents/GridCardMain";
-import "./mainPageAutohuntReviews.scss";
 import { CarSkeleton } from "Components/CarComponents/Skeleton";
+
+import "./mainPageAutohuntReviews.scss";
+
 export const MainPageAutohuntReview = () => {
   const { cars, status } = useMainPageAutohuntReview();
 

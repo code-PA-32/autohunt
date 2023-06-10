@@ -1,5 +1,6 @@
 import { Container } from "Components/Container";
 import { AutohuntCarDetail } from "features/AutohuntCarDetail";
+
 import "./autohuntCarDetailsPage.scss";
 
 export const AutohuntCarDetailsPage = () => {

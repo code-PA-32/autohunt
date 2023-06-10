@@ -1,6 +1,7 @@
 import { SyntheticEvent } from "react";
-import "./reviewCarFilter.scss";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
+
+import "./reviewCarFilter.scss";
 
 interface ReviewCarFilterProps {
   brand: string | null;

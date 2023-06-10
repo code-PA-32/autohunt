@@ -1,9 +1,12 @@
-import { Switch } from "Components/UserComponents";
-import "./login.scss";
 import * as Yup from "yup";
-import { useLogin } from "./useLogin";
 import { Form, Field, Formik, ErrorMessage } from "formik";
 import { TextField } from "@mui/material";
+
+import { Switch } from "Components/UserComponents";
+import { useLogin } from "./useLogin";
+
+import "./login.scss";
+
 export const LoginContainer = () => {
   const { handleOnSubmit } = useLogin();
 

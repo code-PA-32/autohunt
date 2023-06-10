@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
+import { ChangeEvent } from "react";
+
 import { useAppDispatch } from "store";
 import { sellCarSelector } from "../sellCarSelector";
 import { setCargo, setHeight, setLength, setWidth } from "../sellCarSlice";
-import { ChangeEvent } from "react";
+
 export const useCarDimension = () => {
   const dispatch = useAppDispatch();
   const { car } = useSelector(sellCarSelector);

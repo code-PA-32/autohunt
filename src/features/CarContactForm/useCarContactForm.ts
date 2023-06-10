@@ -31,9 +31,7 @@ export const useCarContactForm = () => {
         text: values.comment,
       },
     };
-    console.log(data);
     dispatch(createUpdateChat(data));
-    console.log('done')
   };
 
   return { handleOnSubmit };

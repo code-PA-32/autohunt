@@ -1,7 +1,8 @@
 import { LoginContainer } from "features/User";
 import { Container } from "Components/Container";
-import "./login.scss";
 import { Logo } from "Components/UserComponents";
+
+import "./login.scss";
 
 export const Login = () => {
   return (

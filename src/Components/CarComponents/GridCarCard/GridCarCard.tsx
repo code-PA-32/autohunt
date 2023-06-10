@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
@@ -11,11 +10,13 @@ import EvStationRoundedIcon from "@mui/icons-material/EvStationRounded";
 import LocalGasStationRoundedIcon from "@mui/icons-material/LocalGasStationRounded";
 import AirlineSeatReclineExtraRoundedIcon from "@mui/icons-material/AirlineSeatReclineExtraRounded";
 import RadioButtonCheckedRoundedIcon from "@mui/icons-material/RadioButtonCheckedRounded";
+
 import { CarCardProps } from "interfaces";
 import { RibbonFlag } from "../RibbonFlag";
 import { CarRating } from "../CarRating";
-import "./gridCarCard.scss";
 import { ImageWithSpinner } from "features/ImageWithSpinner";
+
+import "./gridCarCard.scss";
 
 export const GridCarCard = (props: CarCardProps) => {
   const {

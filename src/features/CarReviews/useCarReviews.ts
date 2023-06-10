@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux";
+import { SyntheticEvent, useEffect } from "react";
+
 import { carReviewsSelector } from "./carReviewsSelector";
 import {
   setModel,
@@ -6,9 +8,10 @@ import {
   setPagination,
   getReviewCars,
 } from "./carReviewsSlice";
-import { SyntheticEvent, useEffect } from "react";
 import { useAppDispatch } from "store";
 import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
+
+
 export const useCarReviews = () => {
   const { cars, model, brand, total, status, pagination } =
     useSelector(carReviewsSelector);

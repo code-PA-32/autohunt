@@ -1,9 +1,10 @@
-import { useAppDispatch } from "store";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
+
+import { useAppDispatch } from "store";
 import { createUser, setLogged } from "../userSlice";
 import { currentUserSelector } from "../Login/loginUserSelectors";
-import { useNavigate } from "react-router-dom";
 
 interface SignUpUser {
   name: string;

@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 import { carFiltersSelector } from "./carFiltersSelector";
 import { filterDataSelector } from "./filtersDataSelector";
-import { useEffect } from "react";
 import { useAppDispatch } from "store";
 import { getFiltersData } from "./carFiltersDataSlice";
 import {
@@ -12,7 +14,6 @@ import {
   setPrice,
   setTerm,
 } from "./carFiltersSlice";
-import { useNavigate } from "react-router-dom";
 
 export const useCarFilters = () => {
   const { filters } = useSelector(carFiltersSelector);

@@ -1,7 +1,9 @@
-import { Comment } from "types";
-import "./autohuntReviewComments.scss";
 import { Avatar } from "@mui/material";
+import { Comment } from "types";
 import { toHost } from "utils";
+
+import "./autohuntReviewComments.scss";
+
 interface AutohuntReviewCommentsProps {
   comments: Comment[];
   user: string;
@@ -29,7 +31,12 @@ export const AutohuntReviewComments = ({
               <p>{com.text}</p>
 
               {user && user === com.userId && (
-                <button onClick={() => onDeleteComment(com._id)}>Delete</button>
+                <button
+                  className="delete_comment"
+                  onClick={() => onDeleteComment(com._id)}
+                >
+                  Delete
+                </button>
               )}
             </div>
           </div>

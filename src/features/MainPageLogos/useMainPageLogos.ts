@@ -1,10 +1,11 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 import { useAppDispatch } from "store";
 import { mainPageLogosSelector } from "./mainPageLogosSelector";
-import { useEffect } from "react";
 import { getPageLogos } from "./mainPageLogosSlice";
 import { setBrand } from "features/MainPageFilters/carFiltersSlice";
-import { useNavigate } from "react-router-dom";
 
 export const useMainPageLogos = () => {
   const dispatch = useAppDispatch();

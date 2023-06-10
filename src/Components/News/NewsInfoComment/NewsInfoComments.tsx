@@ -1,8 +1,11 @@
-import { Comment } from "types";
-import "./newsInfoComments.scss";
-import { Avatar } from "@mui/material";
-import { toHost } from "utils";
 import InsertCommentRoundedIcon from "@mui/icons-material/InsertCommentRounded";
+import { Avatar } from "@mui/material";
+
+import { Comment } from "types";
+import { toHost } from "utils";
+
+import "./newsInfoComments.scss";
+
 interface NewsInfoCommentsProps {
   comments: Comment[];
   user: string;

@@ -1,11 +1,12 @@
-import { Switch } from "Components/UserComponents";
-import "./signUp.scss";
 import * as Yup from "yup";
-
 import { Form, Field, Formik, ErrorMessage } from "formik";
 import { TextField } from "@mui/material";
+
 import { useSignUp } from "./useSignUp";
 import { MessagePopup } from "Components/MessagePopup/MessagePopup";
+import { Switch } from "Components/UserComponents";
+
+import "./signUp.scss";
 
 export const SignUp = () => {
   const { handleOnSubmit, open, setClose, message } = useSignUp();

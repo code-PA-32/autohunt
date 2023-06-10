@@ -1,9 +1,12 @@
-import { toHost } from "utils";
-import { Message as MessageType } from "types/chat";
+import { useEffect, useRef } from "react";
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 import DoneAllRoundedIcon from "@mui/icons-material/DoneAllRounded";
+
+import { Message as MessageType } from "types/chat";
+import { toHost } from "utils";
+
 import "./chat.scss";
-import { useEffect, useRef } from "react";
+
 interface MessageProps {
   messages: MessageType[];
   userId: string;

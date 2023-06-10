@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
+import { ChangeEvent, SyntheticEvent, useEffect, useState } from "react";
+
 import { useAppDispatch } from "store";
 import { sellCarSelector } from "../sellCarSelector";
 import { filterDataSelector } from "features/MainPageFilters/filtersDataSelector";
-import { ChangeEvent, SyntheticEvent, useEffect, useState } from "react";
 import { setCity, setFeatures, setLocation, setPrice } from "../sellCarSlice";
 import { SellCarFeatures } from "../../../types/sellCar";
+
 export const useCarFeatures = () => {
   const dispatch = useAppDispatch();
   const {

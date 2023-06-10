@@ -1,7 +1,9 @@
 import { useCarPicture } from "./useCarPicture";
-import "./carPicture.scss";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
+
+import "./carPicture.scss";
+
 export const CarPicture = () => {
   const { images, onImageDelete, uploadImage } = useCarPicture();
   return (

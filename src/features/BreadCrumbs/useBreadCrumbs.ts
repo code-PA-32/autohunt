@@ -1,11 +1,10 @@
+import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { autohuntCarDetailsSelector } from "features/AutohuntCarDetail/autohuntDetailSelector";
 import { carReviewDetailsSelector } from "features/CarReviewDetails/carReviewDetailsSelector";
 import { newsInfoSelector } from "features/NewsInfo/newsInfoSelector";
 import { productDetailsSelector } from "features/ProductDetails/productDetailsSelector";
 import { userMessagesSelector } from "features/User/UserChats/userMessagesSelector";
-
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
 
 export const useBreadCrumbs = () => {
   const { product } = useSelector(productDetailsSelector);

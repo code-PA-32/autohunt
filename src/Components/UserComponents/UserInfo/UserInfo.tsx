@@ -1,6 +1,8 @@
 import Avatar from "@mui/material/Avatar";
-import "./userInfo.scss";
 import PhotoCameraRoundedIcon from "@mui/icons-material/PhotoCameraRounded";
+
+import "./userInfo.scss";
+
 interface UserInfoProps {
   photo: string;
   name: string;

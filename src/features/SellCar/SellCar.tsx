@@ -4,8 +4,9 @@ import { CarEngine } from "./CarEngine";
 import { CarFeatures } from "./CarFeatures";
 import { CarPicture } from "./CarPictures";
 import { useSellCar } from "./useSellCar";
-import "./sellCar.scss";
 import { CarBattery } from "./Battery/Battery";
+
+import "./sellCar.scss";
 
 export const SellCar = () => {
   const { onCarSell, logged } = useSellCar();

@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
 import { useAppDispatch } from "store";
 import { newsSelector } from "./mainPageNewsSelect";
-import { useEffect } from "react";
 import { getPopularNews } from "./mainPageNewsSlice";
 
 export const useMainPageNews = () => {
@@ -9,8 +10,8 @@ export const useMainPageNews = () => {
   const { news, status } = useSelector(newsSelector);
 
   useEffect(() => {
-    dispatch(getPopularNews());
+    if (news.length === 0) dispatch(getPopularNews());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  console.log(news);
   return { news, status };
 };

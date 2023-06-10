@@ -1,4 +1,6 @@
+import axios from "axios";
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+
 import { Status } from "types";
 import { LoginUser, User } from "types/user";
 import {
@@ -8,7 +10,6 @@ import {
   SET_USER_PHOTO,
   UPDATE_USER_DATA,
 } from "config";
-import axios from "axios";
 
 export const createUser = createAsyncThunk<
   { data: User },
@@ -156,6 +157,7 @@ const currentUser = createSlice({
         state.user.chats?.push(chatId);
       },
     },
+    logout: () => initialState,
   },
   extraReducers(builder) {
     builder
@@ -169,7 +171,6 @@ const currentUser = createSlice({
       .addCase(
         loginUser.fulfilled,
         (state, action: PayloadAction<{ data: User }>) => {
-          console.log(action.payload);
           state.user = action.payload.data;
           state.status = "idle";
         }
@@ -221,4 +222,4 @@ const currentUser = createSlice({
 });
 
 export const currentUserReducer = currentUser.reducer;
-export const { setLogged, likeCar, addChatId } = currentUser.actions;
+export const { setLogged, likeCar, addChatId, logout } = currentUser.actions;

@@ -1,7 +1,8 @@
-import "./reviewCarList.scss";
-import { CardCars } from "types";
 import { GridCarCard } from "Components/CarComponents/GridCarCard";
 import { CarSkeleton } from "Components/CarComponents/Skeleton";
+import { CardCars } from "types";
+
+import "./reviewCarList.scss";
 
 interface ReviewCarListProps {
   cars: CardCars[];

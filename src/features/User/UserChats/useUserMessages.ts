@@ -1,9 +1,10 @@
+import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+
 import { useAppDispatch } from "store";
 import { userMessagesSelector } from "./userMessagesSelector";
-import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { currentUserSelector } from "../Login/loginUserSelectors";
-import { useParams } from "react-router-dom";
 import {
   getChatMessages,
   sentMessage,

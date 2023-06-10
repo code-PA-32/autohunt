@@ -22,10 +22,11 @@ export const useCarReviewDetails = () => {
   const { carId } = useParams();
   const dispatch = useAppDispatch();
   const {
-    user: { name, userId, photo, }, logged
+    user: { name, userId, photo },
+    logged,
   } = useSelector(currentUserSelector);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const { car, status } = useSelector(carReviewDetailsSelector);
+  const { car } = useSelector(carReviewDetailsSelector);
   const [revRating, setRevRating] = useState(initState);
   const [comment, setComment] = useState("");
 
@@ -47,7 +48,7 @@ export const useCarReviewDetails = () => {
 
   useEffect(() => {
     if (carId) dispatch(getReviewDetails(carId));
-  }, []);
+  }, [dispatch, carId]);
 
   const setRating = (
     event: SyntheticEvent<Element, Event>,
@@ -89,12 +90,12 @@ export const useCarReviewDetails = () => {
 
   return {
     car,
-    status,
     revRating,
     setRating,
     setRevComment,
     comment,
-    userId,logged,
+    userId,
+    logged,
     onSubmitComment,
     onDeleteComment,
     goNext,

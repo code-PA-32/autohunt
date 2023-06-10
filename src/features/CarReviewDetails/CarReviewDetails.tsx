@@ -1,14 +1,12 @@
 import { ReviewDetails } from "Components/Article/ReviewDetails";
 import { useCarReviewDetails } from "./useCarReviewDetails";
 import { ProductSlider } from "Components/ProductDetails/Slider";
-
 import { CarReviewComments } from "Components/Article/CarReviewComments";
 import { AddCarReview } from "Components/Article/AddCarReview";
 
 export const CarReviewDetails = () => {
   const {
     car,
-    status,
     setRating,
     onSubmitComment,
     onDeleteComment,
@@ -23,7 +21,6 @@ export const CarReviewDetails = () => {
     currentIndex,
     length,
   } = useCarReviewDetails();
-  console.log(car);
   return (
     <>
       <ProductSlider

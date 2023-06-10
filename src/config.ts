@@ -16,9 +16,10 @@ export const COMPARE_CARS = BASE_URL + "api/cars/compare-cars";
 
 export const COMPARE_CARS_IDS = BASE_URL + "api/cars/compare-cars-byId";
 
-export const ONE_PRODUCT = (id: string): string => {
-  return BASE_URL + `api/cars/${id}`;
-};
+export const ONE_PRODUCT = (id: string): string => BASE_URL + `api/cars/${id}`;
+
+export const UPDATE_VIEWS = (id: string) =>
+  BASE_URL + `api/cars/add-views/${id}`;
 
 export const GET_CAR_LIST = (filters: string) =>
   BASE_URL + `api/cars/filtered-cars?${filters}`;

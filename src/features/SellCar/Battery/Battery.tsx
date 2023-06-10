@@ -1,6 +1,8 @@
-import "./battery.scss";
 import { useBattery } from "./useBattery";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
+
+import "./battery.scss";
+
 export const CarBattery = () => {
   const {
     batteries,

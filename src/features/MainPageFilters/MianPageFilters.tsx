@@ -1,13 +1,15 @@
-import "./mainPageFilters.scss";
 import { Link } from "react-router-dom";
-import { useCarFilters } from "./useCarFiltersSlice";
 import { Box } from "@mui/material";
 import { Paper } from "@mui/material";
 import { InputBase } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Slider } from "@mui/material";
+
+import { useCarFilters } from "./useCarFiltersSlice";
 import { AutoCompleteSelect } from "Components/Filters";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
+
+import "./mainPageFilters.scss";
 
 export const MainPageFilters = () => {
   const {

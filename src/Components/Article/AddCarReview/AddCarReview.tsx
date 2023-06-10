@@ -1,7 +1,9 @@
 import { ChangeEvent, SyntheticEvent } from "react";
-import "./addCarReview.scss";
 import { Rating } from "@mui/material";
 import { TextInput } from "Components/SellCar";
+
+import "./addCarReview.scss";
+
 interface AddReviewProps {
   rating: {
     Comfort: number;

@@ -7,7 +7,6 @@ import { AddNewsComment } from "Components/News/AddNewsComment";
 export const NewsInfo = () => {
   const {
     newsInfo,
-    status,
     user,
     logged,
     handleSetNewsText,

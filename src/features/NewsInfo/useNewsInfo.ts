@@ -1,12 +1,13 @@
+import { useSelector } from "react-redux";
 import { ChangeEvent, useEffect, useState } from "react";
-import { useAppDispatch } from "store";
+import { useParams } from "react-router-dom";
+
 import {
   addNewsComment,
   deleteNewsComment,
   getNewsInfo,
 } from "./newsInfoSlice";
-import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useAppDispatch } from "store";
 import { newsInfoSelector } from "./newsInfoSelector";
 import { currentUserSelector } from "features/User/Login/loginUserSelectors";
 
@@ -19,7 +20,7 @@ export const useNewsInfo = () => {
 
   useEffect(() => {
     if (id) dispatch(getNewsInfo(id));
-  }, []);
+  }, [dispatch, id]);
 
   const handleSetNewsText = (e: ChangeEvent<HTMLInputElement>) => {
     setNewsText(e.target.value);

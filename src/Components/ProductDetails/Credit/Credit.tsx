@@ -1,7 +1,8 @@
-import "./credit.scss";
+import { ChangeEvent, SyntheticEvent } from "react";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
 import { TextInput } from "Components/SellCar";
-import { ChangeEvent, SyntheticEvent } from "react";
+
+import "./credit.scss";
 
 interface CreditProps {
   price: number;

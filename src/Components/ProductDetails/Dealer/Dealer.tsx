@@ -1,9 +1,11 @@
-import { DealerProps } from "interfaces";
-import "./dealer.scss";
+import { Avatar } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+
 import { toHost } from "utils";
-import { Avatar } from "@mui/material";
+import { DealerProps } from "interfaces";
+
+import "./dealer.scss";
 
 export const Dealer = ({
   phone,

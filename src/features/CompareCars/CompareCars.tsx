@@ -1,9 +1,10 @@
-import { CardCars } from "types";
-import "./compareCars.scss";
-import { useCompare } from "./use-сompareCars";
 import { Link } from "react-router-dom";
 
+import { CardCars } from "types";
+import { useCompare } from "./use-сompareCars";
 import { GridCardMain } from "Components/CarComponents/GridCardMain";
+
+import "./compareCars.scss";
 
 export const CompareCars = () => {
   const { cars, status } = useCompare();

@@ -10,7 +10,7 @@ export const useAutohuntReviews = () => {
 
   useEffect(() => {
     dispatch(getAutohuntReviews());
-  }, []);
+  }, [dispatch]);
 
   return { cars, status };
 };

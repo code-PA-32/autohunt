@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+
 import { init, setCondition } from "features/MainPageFilters/carFiltersSlice";
 import { currentUserSelector } from "features/User/Login/loginUserSelectors";
 import { userChatSelector } from "features/User/UserChats/userChatsSelector";
-import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { logout } from "features/User/userSlice";
 import { useAppDispatch } from "store";
 
 export const useHeader = () => {
@@ -10,6 +12,7 @@ export const useHeader = () => {
   const location = useLocation().pathname;
   const { user, logged } = useSelector(currentUserSelector);
   const { length } = useSelector(userChatSelector);
+
   const handleResetFilters = () => {
     dispatch(init());
   };
@@ -21,7 +24,11 @@ export const useHeader = () => {
     dispatch(init());
     dispatch(setCondition(false));
   };
-  console.log(length);
+
+  const onUserLogout = () => {
+    dispatch(logout());
+  };
+
   const headerClass = (location: string) => {
     let clazz = "";
     switch (location) {
@@ -39,6 +46,7 @@ export const useHeader = () => {
     handleResetFilters,
     handleSetNewCars,
     handleSetUsedCars,
+    onUserLogout,
     clazz,
     userName: user.name,
     avatar: user.photo,

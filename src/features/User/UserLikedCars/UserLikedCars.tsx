@@ -1,4 +1,4 @@
-import { LikedCars, UserInfo } from "Components/UserComponents";
+import { LikedCars } from "Components/UserComponents";
 import { ProfileLink } from "Components/UserComponents/ProfileLinks/ProfileLinks";
 import { useProfile } from "../UserProfile/useProfile";
 

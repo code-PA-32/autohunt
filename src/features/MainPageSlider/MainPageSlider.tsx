@@ -1,8 +1,9 @@
 import { useMainSlides } from "./useMainPageSlide";
+
 import "./mainPageSlides.scss";
 
 export const MainPageSlider = () => {
-  const { index, setIndex, slides, status } = useMainSlides();
+  const { index, setIndex, slides } = useMainSlides();
 
   return (
     <div className="slideshow" id="slideshow">

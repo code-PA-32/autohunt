@@ -1,5 +1,7 @@
-import "./pageLogos.scss";
 import { Logo } from "types/logo";
+
+import "./pageLogos.scss";
+
 interface PageLogosProps {
   logos: Logo[];
   onSetFilter: (filter: string) => void;

@@ -2,6 +2,7 @@ import { FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
 import { AutoCompleteSingle } from "Components/Filters/AutoCompleteSingle";
 import { TextInput } from "Components/SellCar";
 import { useCarDetails } from "./useCarDetails";
+
 import "./carDetails.scss";
 
 export const CarDetails = () => {

@@ -1,7 +1,8 @@
 import { ChangeEvent, FormEvent } from "react";
+import AddPhotoAlternateRoundedIcon from "@mui/icons-material/AddPhotoAlternateRounded";
+
 import "./chatMessageForm.scss";
 
-import AddPhotoAlternateRoundedIcon from "@mui/icons-material/AddPhotoAlternateRounded";
 interface ChatMessageFormProps {
   text: string;
   image: string | null;

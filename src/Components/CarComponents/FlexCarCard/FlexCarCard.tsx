@@ -1,4 +1,3 @@
-import React from "react";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
 import CompareArrowsRoundedIcon from "@mui/icons-material/CompareArrowsRounded";
@@ -11,11 +10,13 @@ import LocalGasStationRoundedIcon from "@mui/icons-material/LocalGasStationRound
 import AirlineSeatReclineExtraRoundedIcon from "@mui/icons-material/AirlineSeatReclineExtraRounded";
 import RadioButtonCheckedRoundedIcon from "@mui/icons-material/RadioButtonCheckedRounded";
 import { Link } from "react-router-dom";
+
 import { RibbonFlag } from "../RibbonFlag";
 import { CarRating } from "../CarRating";
 import { CarCardProps } from "interfaces";
-import "./flexCarCard.scss";
 import { ImageWithSpinner } from "features/ImageWithSpinner";
+
+import "./flexCarCard.scss";
 
 export const FlexCarCard = (props: CarCardProps) => {
   const {
