@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import { ChangeEvent, useEffect, useState } from "react";
 
 import { currentUserSelector } from "../Login/loginUserSelectors";
@@ -27,14 +26,7 @@ export const useProfile = () => {
   const [open, setOpen] = useState(false);
   const [edit, setEdit] = useState(false);
   const [editUser, setEditUser] = useState(false);
-  const navigate = useNavigate();
   const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    if (!logged) {
-      navigate("/");
-    }
-  }, [logged, navigate]);
 
   useEffect(() => {
     if (logged && user.likedCars?.length !== 0) {
