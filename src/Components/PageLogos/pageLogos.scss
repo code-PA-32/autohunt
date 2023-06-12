@@ -22,3 +22,13 @@
     }
   }
 }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .logos {
+    width: 80%;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .logos {
+    width: 95%;
+  }
+}

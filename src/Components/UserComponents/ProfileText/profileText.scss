@@ -50,3 +50,14 @@
     }
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .profile_text {
+    ul {
+      width: 100%;
+      gap: 10px;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}

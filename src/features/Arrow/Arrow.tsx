@@ -30,6 +30,7 @@ export const Arrow = () => {
         bottom: 16,
         right: 16,
         opacity: visible ? 1 : 0,
+        zIndex: 2060
       }}
       icon={<KeyboardArrowUpRoundedIcon />}
     ></SpeedDial>

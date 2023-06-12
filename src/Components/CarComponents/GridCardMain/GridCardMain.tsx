@@ -56,7 +56,6 @@ export const GridCardMain = (props: CarCardProps) => {
         <ImageWithSpinner
           src={src[0]}
           alt={`${brand} ${model} ${year}`}
-          height={160}
         />
         {canEdit ? (
           <button

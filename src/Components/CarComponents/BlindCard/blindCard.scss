@@ -9,9 +9,9 @@
   border-radius: 5px;
   position: relative;
   cursor: pointer;
-.icon{
+  .icon {
     font-size: 40px;
-}
+  }
   span {
     font-weight: 500;
     font-size: 24px;
@@ -30,3 +30,4 @@
 .blind_card:hover {
   opacity: 1;
 }
+

@@ -21,6 +21,7 @@ export const CarPicture = () => {
           multiple
           required={images.length === 0 ? true : false}
           type="file"
+          accept=".png, .jpeg, .jpg"
           onChange={(e) => {
             uploadImage(e);
           }}

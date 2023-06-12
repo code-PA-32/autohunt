@@ -69,3 +69,23 @@
     }
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .credit {
+    .credit_simulation {
+      padding: 5px;
+      &-left {
+        width: 60%;
+        gap: 10px;
+        .car_rate,
+        .car_month,
+        .car_payment.car_price,
+        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+          width: 46%;
+        }
+      }
+      &-right {
+        width: 40%;
+      }
+    }
+  }
+}

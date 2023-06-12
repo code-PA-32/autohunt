@@ -1,10 +1,4 @@
-.cars_to_compare.fade {
-  opacity: 0;
-}
-
 .cars_to_compare {
-  opacity: 1;
-  transition: 0.8s ease;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -65,5 +59,21 @@
   &-button:hover {
     background-color: var(--carCardFontColor);
     border: 1px solid var(--carCardFontColor);
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .cars_to_compare {
+    width: 80%;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .cars_to_compare {
+    width: 95%;
+    &-list::before {
+      font-size: 30px;
+      height: 100px;
+      width: 100px;
+    }
   }
 }

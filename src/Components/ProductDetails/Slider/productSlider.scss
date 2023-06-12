@@ -109,3 +109,13 @@
     }
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .full_car_slider {
+    &-dots {
+      gap: 10px;
+      .mini {
+        width: 110px;
+      }
+    }
+  }
+}

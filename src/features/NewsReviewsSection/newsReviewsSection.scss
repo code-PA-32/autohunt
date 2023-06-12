@@ -25,3 +25,14 @@
     border-bottom: 2px solid var(--carCardFontColor);
   }
 }
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .news_reviews {
+    width: 80%;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .news_reviews {
+    width: 95%;
+  }
+}

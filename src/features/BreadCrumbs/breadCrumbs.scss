@@ -28,3 +28,17 @@
 .details {
   background-color: inherit;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .breadcrumb {
+    padding: 30px 0 30px 50px;
+    .bread_head {
+      font-size: 25px;
+    }
+    .bread {
+      padding-left: 20px;
+      ol {
+        align-items: center;
+      }
+    }
+  }
+}

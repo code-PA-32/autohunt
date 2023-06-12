@@ -5,7 +5,6 @@
   position: relative;
   gap: 20px;
   .news_filters {
-
     right: 0;
   }
   .news_list {
@@ -13,5 +12,10 @@
     img {
       width: 100%;
     }
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .news_page {
+    width: 95%;
   }
 }

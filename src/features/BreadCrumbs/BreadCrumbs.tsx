@@ -36,7 +36,7 @@ export const Breadcrumb = () => {
       >
         {location.pathname !== "/" && (
           <LinkRouter underline="hover" color="inherit" to="/">
-            <HomeRoundedIcon sx={{ color: "inherit" }} />
+            <HomeRoundedIcon sx={{ color: "inherit", fontSize: 'inherit' }} />
           </LinkRouter>
         )}
 

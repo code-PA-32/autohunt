@@ -33,6 +33,7 @@ export const CarFeatures = () => {
                   checked={Futures[item as keyof SellCarFeatures]}
                   onChange={onStateChange}
                   inputProps={{ "aria-label": "controlled" }}
+                  className="single_input"
                 />
               }
               label={item}

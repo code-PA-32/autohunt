@@ -42,3 +42,8 @@
       100% 0 100% 0/0px 0 2px 0 stretch;
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .review_rating {
+    width: 90%;
+  }
+}

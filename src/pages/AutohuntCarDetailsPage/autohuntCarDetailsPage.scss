@@ -10,3 +10,12 @@
     margin: 50px auto;
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .autohunt_details {
+    .dealer_info_block,
+    .comments_box,
+    .autohunt_add_review {
+      width: 90%;
+    }
+  }
+}

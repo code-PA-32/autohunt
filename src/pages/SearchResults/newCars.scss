@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
+  position: relative;
   .filters {
     grid-column: 2/4;
     grid-row: 1/8;
@@ -20,5 +21,29 @@
     grid-column: 6/8;
     grid-row: 10/11;
     margin: 50px 0;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .search-results {
+  margin-top: 20px;
+
+    .filters {
+      grid-column: 2/4;
+      grid-row: 1/8;
+      position: absolute;
+      z-index: 2000;
+    }
+    .tiny_panel_view {
+      grid-column: 6/8;
+      grid-row: 1/2;
+      padding-left:250px;
+    }
+    .pagination {
+      grid-column: 6/8;
+      grid-row: 10/11;
+      .inner_pagination {
+        margin: 0 auto;
+      }
+    }
   }
 }

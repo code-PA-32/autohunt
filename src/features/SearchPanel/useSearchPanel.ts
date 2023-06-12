@@ -23,6 +23,7 @@ import { useAppDispatch } from "store";
 export const useSearchPanel = () => {
   const dispatch = useAppDispatch();
   const locationFilter = useLocation().pathname;
+  const [expanded, setExpanded] = useState<string | false>("filters");
   const { filters } = useSelector(carFiltersSelector);
   const { filterData, status } = useSelector(filterDataSelector);
   const {
@@ -98,6 +99,10 @@ export const useSearchPanel = () => {
       ? dispatch(setCondition(true))
       : dispatch(setCondition(false));
   };
+  const handleChangeExpanded =
+  (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
+    setExpanded(newExpanded ? panel : false);
+  };
   return {
     brands,
     models,
@@ -135,5 +140,7 @@ export const useSearchPanel = () => {
     handleLocalPrice,
     handleChangeFuel,
     handleChangeCondition,
+    expanded,
+    handleChangeExpanded
   };
 };

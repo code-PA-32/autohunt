@@ -51,3 +51,10 @@
     gap: 20px;
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .compare_accordion {
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+}

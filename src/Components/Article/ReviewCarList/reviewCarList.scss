@@ -5,3 +5,8 @@
   justify-items: center;
   gap: 20px;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .review_list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

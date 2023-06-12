@@ -269,3 +269,41 @@
     }
   }
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .grid_card {
+    height: 430px;
+    width: 300px;
+    &-info {
+      h3 {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 17px;
+        color: var(--main-white);
+      }
+      &-price {
+        font-size: 17px;
+        margin-top: 3px;
+      }
+      &-location {
+        margin-top: 3px;
+      }
+
+      &-block {
+        width: 100%;
+        &-list {
+          text-align: left;
+          margin-top: 5px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          li {
+            margin: 4px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+  }
+}

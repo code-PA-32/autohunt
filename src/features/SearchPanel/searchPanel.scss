@@ -1,37 +1,33 @@
 .filters {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: white;
-  background-color: var(--carDetailsDealerBG);
-  padding: 15px;
-  border-radius: var(--border-ra5);
-  h2 {
-    padding-left: 5px;
-    border-bottom: 2px solid var(--textColor);
-    color: var(--textColor);
-  }
-  .filter_condition {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .number_price {
+  width: 280px;
+  .details {
+    background-color: var(--carDetailsDealerBG);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 1.1em;
-    padding-left: 5px;
-    .price {
+    color: white;
+    border-radius: var(--border-ra5);
+    .filter_condition {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
+      justify-content: space-evenly;
     }
-  }
-  .price_slider {
-    width: 90%;
-    margin: 0 auto;
+    .number_price {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1.1em;
+      padding-left: 5px;
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+    }
+    .price_slider {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }

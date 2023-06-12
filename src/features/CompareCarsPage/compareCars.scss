@@ -37,3 +37,18 @@
 .blind_card:hover {
   opacity: 1;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .compare_car_page {
+    width:95%;
+    margin:0 auto;
+    padding:0;
+    &-list {
+      gap: 10px;
+    }
+  }
+  .blind_card {
+    height: 430px;
+    width: 270px;
+  
+  }
+}

@@ -16,3 +16,12 @@
   justify-content: space-between;
   justify-items: center;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .car-list-flex {
+  }
+  .car-list-grid {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 10px;
+    row-gap: 30px;
+  }
+}

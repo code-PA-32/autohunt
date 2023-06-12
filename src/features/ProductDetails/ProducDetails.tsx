@@ -8,7 +8,6 @@ import { GoogleMap } from "Components/ProductDetails/GoogleMap";
 import { Credit } from "Components/ProductDetails/Credit/Credit";
 import { useCreditCalc } from "./useCreditCalc";
 
-
 export const ProductDetails = () => {
   const {
     product: { src, views, description, dealer, details, price, location, id },
@@ -19,6 +18,7 @@ export const ProductDetails = () => {
     features,
     height,
     rating,
+    form,
     length,
     onSetDescriptionHeight,
     onSetFeaturesLength,
@@ -39,6 +39,14 @@ export const ProductDetails = () => {
         goPrev={goPrev}
         goToSlide={goToSlide}
       />
+      <ProductDetailsCenter
+        description={description}
+        height={height}
+        length={length}
+        setHeight={onSetDescriptionHeight}
+        setLength={onSetFeaturesLength}
+        features={features}
+      />
       <SideInfo
         flag={flag!}
         id={id}
@@ -50,16 +58,8 @@ export const ProductDetails = () => {
         price={price}
         rating={rating}
       />
-      <ProductDetailsCenter
-        description={description}
-        height={height}
-        length={length}
-        setHeight={onSetDescriptionHeight}
-        setLength={onSetFeaturesLength}
-        features={features}
-      />
       <Dealer {...dealer} />
-      <CarContactForm />
+      <CarContactForm form={form} />
       <GoogleMap {...location} googleMaps={window.google.maps} />
       <Credit
         price={price}

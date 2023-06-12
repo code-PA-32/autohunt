@@ -5,3 +5,8 @@
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 20px;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .autohunt_cars {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

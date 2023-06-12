@@ -7,6 +7,7 @@ import { productDetailsSelector } from "./productDetailsSelector";
 import { getOneProduct, updateCarViews } from "./productDetailsSlice";
 import { useCompareCars } from "features/CompareCarsPage/useCompareCarsPage";
 import { useSearchCarList } from "features/SearchCarList/useSearchCarList";
+import { currentUserSelector } from "features/User/Login/loginUserSelectors";
 
 export const useProductDetail = () => {
   const { id } = useParams();
@@ -16,7 +17,9 @@ export const useProductDetail = () => {
   const [length, setLength] = useState(false);
   const { isInCompare } = useCompareCars();
   const { handleAddCompare } = useSearchCarList();
-
+  const {
+    user: { userId },
+  } = useSelector(currentUserSelector);
   const { status, product } = useSelector(productDetailsSelector);
 
   const goPrev = () => {
@@ -57,6 +60,11 @@ export const useProductDetail = () => {
   let flag;
   if (id) flag = isInCompare(id);
 
+  const formFlag = (): boolean => {
+    return product.saleId === userId ? true : false;
+  };
+  const form = formFlag();
+
   return {
     status,
     product,
@@ -72,5 +80,6 @@ export const useProductDetail = () => {
     onSetFeaturesLength,
     handleAddCompare,
     flag,
+    form,
   };
 };

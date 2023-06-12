@@ -2,3 +2,8 @@
   width: 60%;
   margin: 0px auto 50px;
 }
+@media (min-width: 775px) and (max-width: 1000px) {
+  .news_info_page {
+    width: 95%;
+  }
+}

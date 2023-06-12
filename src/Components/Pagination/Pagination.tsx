@@ -18,6 +18,7 @@ export const PaginationBox = ({
     <div className="pagination" style={style}>
       <Stack spacing={2} className="pagination-inner">
         <Pagination
+        className="inner_pagination"
           page={page}
           size="large"
           onClick={() => window.scrollTo(0, 0)}

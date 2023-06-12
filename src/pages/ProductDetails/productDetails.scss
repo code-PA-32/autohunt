@@ -23,12 +23,43 @@
     grid-column: 2/7;
     grid-row: 5/6;
   }
-  .car_map{
+  .car_map {
     grid-column: 2/7;
     grid-row: 6/7;
   }
-  .credit{
+  .credit {
     grid-column: 2/12;
     grid-row: 8/9;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  .product_details {
+    display: flex;
+    flex-direction: column;
+
+    .side_info_wrapper {
+      margin: 70px auto 0;
+      width: 70%;
+    }
+    .full_car_center {
+      margin: 70px auto 0;
+      width: 70%;
+    }
+    .dealer_info_block {
+      width: 70%;
+      margin: 20px auto;
+    }
+    .contact_form {
+      margin: 70px auto 0;
+      width: 70%;
+    }
+    .car_map {
+      margin: 70px auto 0;
+      width: 70%;
+    }
+    .credit {
+      margin: 70px auto;
+      width: 70%;
+    }
   }
 }
